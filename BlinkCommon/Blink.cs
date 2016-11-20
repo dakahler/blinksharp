@@ -16,6 +16,8 @@ namespace BlinkSharp
         private BlinkNetworksInfo networksInfo;
         private BlinkNetworkEvents eventsInfo;
 
+        private readonly string userAgentString = "iPhone 9.2 | 2.2 | 222";
+
         public Blink()
         {
 
@@ -29,7 +31,7 @@ namespace BlinkSharp
                 {
                     email = username,
                     password = password,
-                    client_specifier = "iPhone 9.2 | 2.2 | 222"
+                    client_specifier = userAgentString
                 };
 
                 // Serialize our concrete class into a JSON String
@@ -37,7 +39,6 @@ namespace BlinkSharp
 
                 // Wrap our JSON inside a StringContent which then can be used by the HttpClient class
                 var httpContent = new StringContent(stringPayload, Encoding.UTF8, "application/json");
-
                 using (var httpClient = new HttpClient())
                 {
 

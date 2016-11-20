@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="BlinkSharp.nuspec" />
+    <None Include="BuildNugetPackage.bat" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
