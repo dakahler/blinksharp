@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>9a1c7848-e635-468f-8c4c-2e3914400fcc</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BlinkSharp</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Blink.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)json\BlinkAuthInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)json\BlinkAuthToken.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)json\BlinkCredentials.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BlinkHttpClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)json\BlinkEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)json\BlinkNetwork.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)json\BlinkNetworkEvents.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)json\BlinkNetworkMetadata.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)json\BlinkNetworksInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)json\BlinkNetworksSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)json\BlinkRegion.cs" />
+  </ItemGroup>
+</Project>
