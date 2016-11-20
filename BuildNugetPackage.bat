@@ -7,3 +7,5 @@ for /d %%a in (
 echo Using nuget.exe at %nugetPath%
 mkdir bin\nuget 2>NUL
 %nugetPath% pack BlinkSharp.csproj -IncludeReferencedProjects -Prop Configuration=Release -OutputDirectory bin\nuget
+
+pause
